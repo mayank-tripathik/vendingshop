@@ -13,7 +13,8 @@ public class CoffeeVendingMachine extends VendingMachine {
     }
 
     // This will call the runnable instance of coffee maker
-    public void makeCoffee(String beverageName, HashMap<String, Long> recipe) {
+    @Override
+    public void makeBeverage(String beverageName, HashMap<String, Long> recipe) {
         executorService.execute(new CoffeeMaker(beverageName, recipe));
     }
 

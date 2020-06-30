@@ -30,7 +30,7 @@ public class CoffeeVendingMachineService {
         orders.keySet().forEach(key->{
             String beverageName = key;
             HashMap<String, Long> recipe = (HashMap<String, Long>) orders.get(key);
-            coffeeVendingMachine.makeCoffee(beverageName, recipe);
+            coffeeVendingMachine.makeBeverage(beverageName, recipe);
         });
     }
 

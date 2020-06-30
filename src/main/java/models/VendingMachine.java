@@ -87,4 +87,6 @@ abstract class VendingMachine {
             }
         }
     }
+
+    abstract public void makeBeverage(String beverageName, HashMap<String, Long> recipe);
 }
